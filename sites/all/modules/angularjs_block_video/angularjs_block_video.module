@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function angularjs_block_video_theme($existing, $type, $theme, $path) {
+  return array(
+    'angularjs_block_video_block' => array(
+      'template' => 'angularjs-block-video-block',
+      'variables' => array()
+    ),
+  );
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function angularjs_block_video_block_info() {
+
+  $blocks['angularjs_block_video_block'] = array(
+    'info' => t('AngularJS Block Video'),
+  );
+
+  return $blocks;
+}
+
+
+/**
+ * Implements hook_block_view().
+ */
+function angularjs_block_video_block_view($delta = '') {
+
+  $block = array();
+
+  switch ($delta) {
+    case 'angularjs_block_video_block':
+      $block['subject'] = t('AngularJS Block Video');
+      $block['content'] = array(
+        '#theme' => 'angularjs_block_video_block',
+        '#attached' => array(
+          'js' => array(
+            drupal_get_path('module', 'angularjs_block_video') . '/js/angular-sanitize/angular-sanitize.min.js',
+            drupal_get_path('module', 'angularjs_block_video') . '/js/videogular/videogular.js',
+            drupal_get_path('module', 'angularjs_block_video') . '/js//videogular-controls/vg-controls.js',
+            drupal_get_path('module', 'angularjs_block_video') . '/js/videogular-overlay-play/vg-overlay-play.js',
+            drupal_get_path('module', 'angularjs_block_video') . '/js/videogular-poster/vg-poster.js',
+            drupal_get_path('module', 'angularjs_block_video') . '/js/videogular-buffering/vg-buffering.js',
+            drupal_get_path('module', 'angularjs_block_video') . '/js/script.js',
+          ),
+          'css' => array(
+            drupal_get_path('module', 'angularjs_block_video') . '/css/style.css',
+          ),
+        ),
+      );
+    break;
+  }
+
+  return $block;
+}
+
+?>

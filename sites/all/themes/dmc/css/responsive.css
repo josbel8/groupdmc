@@ -1,0 +1,501 @@
+@media only screen and (min-width : 640px) {
+
+    .top-bar{
+      height: 28px;
+    }
+
+    .video-slider{
+        height: 545px;
+    }
+
+}
+
+@media only screen and (max-width : 640px){
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    /* FRONT*/
+
+    .block-views-slider-header-block-1 img{
+        min-width: 1540px;
+        text-align:center;
+    }
+
+    #logo img {
+        max-width: 70%;
+        top: 5em;
+        z-index: 1;
+    }
+
+    .top-bar, .top-bar.expanded {
+        background: #808080;
+        width: 100%
+    }
+
+    .view-id-slider_header .legend-slider {
+        font-size: 10pt;
+        margin-top: -30px;
+    }
+
+    #webform-client-form-8 {
+        margin-top: 5em;
+    }
+
+    .webform-client-form-8 .webform-component--hotel,
+    .webform-client-form-8 .webform-component--llegada,
+    .webform-client-form-8 .webform-component--salida,
+    .webform-client-form-8 .webform-component--adultos,
+    .webform-client-form-8 .webform-component--ninos
+    {
+        width: 90%;
+    }
+
+    .form-item, .form-actions {
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+
+    .webform-client-form-8 > div {
+        width: 90%;
+        padding-top: 10px;
+    }
+
+    .block-angularjs-block-video {
+        margin-top: 30em;
+    }
+
+    .video-slider{
+        height: auto;
+    }
+
+    .block-angularjs-block-video .orbit-container ul{
+        min-height: 180px;
+    }
+
+    .orbit-container .orbit-slides-container img {
+        margin-top: 20px;
+    }
+
+    .block-nodeblock-29 {
+        margin-top: 2em;
+    }
+
+    .prensa-slider-home > .row {
+        padding: 0;
+    }
+
+    .prensa-slider-home h2, .prensa-slider-home .views-field-field-image {
+        text-align: center;
+    }
+
+    .view-id-prensa_slider .panel-2col .panel-col-first {
+        width: 100%;
+    }
+
+    .view-pre-footer-front .text-pre-footer {
+        font-size: 0.8em;
+    }
+
+    #angularjsTextFrontSlider .row {
+        min-height: 300px;
+    }
+
+    .testimonios-slider-home {
+        padding-top: 0;
+    }
+
+    .testimonios-slider-home.guillermina,
+    .testimonios-slider-home.juana-la-loca,
+    .testimonios-slider-home.isabel-la-catolica {
+        background-repeat: no-repeat;
+        background-size: 250%;
+    }
+
+    /* HOME UNIDADES INTERNAS */
+
+    .not-front .node-slider-homepage .image{
+       overflow: hidden;
+    }
+
+    .section-hoteleria-y-turismo .node-slider-homepage img,
+    .section-alimentos-y-bebidas .node-slider-homepage img,
+    .section-eventos-y-entretenimiento .node-slider-homepage img {
+        min-width: 870px;
+    }
+
+    .section-hoteleria-y-turismo .block-views-internal-home-block .panel-col-first,
+    .section-alimentos-y-bebidas .block-views-internal-home-block .panel-col-first,
+    .section-eventos-y-entretenimiento .block-views-internal-home-block .panel-col-first {
+        text-align: center;
+        margin-top: 3em;
+        width: 100%;
+    }
+
+    .section-alimentos-y-bebidas .block-views-internal-home-block .panel-col-first,
+    .section-eventos-y-entretenimiento .block-views-internal-home-block .panel-col-first {
+        margin-left: -15px;
+    }
+
+    .section-alimentos-y-bebidas .block-views-internal-home-block,
+    .section-eventos-y-entretenimiento .block-views-internal-home-block {
+        box-shadow: none;
+    }
+
+    .section-hoteleria-y-turismo .view-internal-home .panel-col-last {
+        display:none;
+    }
+
+    .view-hoteleria-y-turismo,
+    .view-alimentos-y-bebidas
+     {
+        margin-top: 24em;
+    }
+
+    .view-eventos-y-entretenimiento
+     {
+        margin-top: 32em;
+    }
+
+    .view-hoteleria-y-turismo .panel-2col .panel-col-first, .view-hoteleria-y-turismo .panel-2col .panel-col-last,
+    .view-alimentos-y-bebidas .panel-2col .panel-col-first, .view-alimentos-y-bebidas .panel-2col .panel-col-last,
+    .view-eventos-y-entretenimiento .panel-2col .panel-col-first, .view-eventos-y-entretenimiento .panel-2col .panel-col-last{
+        width:100%;
+    }
+
+    .view-hoteleria-y-turismo .views-field-field-logo .field-content,
+    .view-eventos-y-entretenimiento .views-field-field-logo .field-content,
+    .view-alimentos-y-bebidas .views-field-field-logo .field-content{
+        margin-left: calc(50% - 110px);
+    }
+
+    .view-hoteleria-y-turismo .panel-col-last,
+    .view-alimentos-y-bebidas .panel-col-last,
+    .view-eventos-y-entretenimiento .panel-col-last{
+        padding: 10em 2em 1em 2em;
+    }
+
+    /* HBILC */
+
+    .node-type-unidad-de-negocio .node-slider-homepage img{
+        min-width: 870px;
+    }
+
+    .page-node-9.node-type-unidad-de-negocio .header-unidad-negocio {
+        max-width: 90%;
+    }
+
+    .header-unidad-negocio .body p {
+        margin: 1em 1em 0 1em;
+    }
+
+    .not-front .webform-client-form-8 > div {
+        margin-top: 28em;
+    }
+
+    .node-type-unidad-de-negocio.section-hotel-boutique-isabel-la-católica .block-angularjs-hotel-video {
+        margin-top: 62em;
+    }
+
+    videogular vg-poster img.stop{
+        margin-top: 0;
+    }
+
+    .node-type-unidad-de-negocio.section-hotel-boutique-isabel-la-católica .panel-2col .panel-col-first,
+    .node-type-unidad-de-negocio.section-hotel-boutique-isabel-la-católica .panel-2col .panel-col-last{
+        width:100%;
+    }
+
+    .node-type-unidad-de-negocio.section-hotel-boutique-isabel-la-católica .orbit-container .orbit-slides-container {
+        max-height: 660px;
+    }
+
+    .node-type-unidad-de-negocio.section-hotel-boutique-isabel-la-católica .block-angularjs-text-slider {
+        margin-top: -4em;
+    }
+
+    .webform-client-form-112 .webform-component--habitacion,
+    .webform-client-form-112 .webform-component--nombre,
+    .webform-client-form-112 .webform-component--telefono,
+    .webform-client-form-112 .webform-component--correo,
+    .webform-client-form-112 .webform-component--llegada,
+    .webform-client-form-112 .webform-component--salida,
+    .webform-client-form-112 .webform-component--adultos,
+    .webform-client-form-112 .webform-component--ninos
+    {
+        width: 95%;
+    }
+
+    .webform-client-form-112 button.webform-submit {
+        margin-left: 5%;
+    }
+
+    section.block-webform-client-block-112 {
+        padding: 30px 5% 30px 5%;
+    }
+
+    .title-ig {
+        background-size: 60%;
+    }
+
+    .images-ig img {
+    /*
+        margin-left: 1%;
+        width: 30%;
+    */
+        border: 4px solid #eaeaea;
+    }
+
+     #node-133 .field-name-field-body {
+        max-width: 90%;
+    }
+
+    #pre-footer .image{
+        overflow: hidden;
+    }
+
+    #pre-footer .image img{
+        min-height: 480px;
+        min-width: 1920px;
+    }
+
+     #node-133 .internal-pre-footer-6 a{
+        font-size: 8pt;
+    }
+
+    /* RESTAURANTES */
+
+    .header-unidad-negocio {
+        margin-top: 4em;
+        box-shadow: none;
+        margin-left: -15px;
+    }
+
+    .block-views-restaurant-menu-block-block {
+        margin-top: 30em;
+    }
+
+    .block-views-restaurant-menu-block-block .panel-col-first,
+    .block-views-restaurant-menu-block-block .panel-col-last .views-field-field-img-der>div>img{
+        display:none;
+    }
+
+    .block-views-restaurant-menu-block-block .panel-col-last{
+        width:100%;
+    }
+
+    .view-restaurant-menu-block .views-field-nothing {
+        top: 1em;
+    }
+
+    .block-views-bloque-horarios-block {
+        margin-top: 13em;
+    }
+
+    .block-views-bloque-horarios-block table a{
+        font-size: 8pt;
+    }
+
+    .block-views-mas-restaurantes-block .view-content>div {
+        max-width: 90%;
+        margin-left: 5%;
+    }
+
+    .block-views-mas-restaurantes-block .view-content p {
+        font-size: 11pt;
+    }
+
+    .section-juana-la-loca-restaurant .block-instagram-block-instagram-block,
+    .section-guillermina-restaurant .block-instagram-block-instagram-block {
+        margin-top: 18em;
+    }
+
+    /* ENTRETENIMIENTO */
+
+
+    .view-iconos-social-corporativo .views-responsive-grid-horizontal .views-row>div,
+    .view-iconos-corporativo .views-responsive-grid-horizontal .views-row>div {
+        width: 50%;
+    }
+
+    .view-iconos-social-corporativo .views-responsive-grid-horizontal .views-row .field-content,
+    .view-iconos-corporativo .views-responsive-grid-horizontal .views-row .field-content {
+        padding: 5px;
+    }
+
+    .view-iconos-social-corporativo .views-responsive-grid .views-field-title,
+    .view-iconos-corporativo .views-responsive-grid .views-field-title {
+        font-size: 1.3em;
+        letter-spacing: 0;
+    }
+
+    .view-iconos-social-corporativo .views-responsive-grid .views-field-field-image img,
+    .view-iconos-corporativo .views-responsive-grid .views-field-field-image img {
+        border: 8px solid #cccccc;
+    }
+
+     #node-131 .field-name-field-body,
+     #node-132 .field-name-field-body {
+        max-width: 90%;
+    }
+
+     #node-131 .internal-pre-footer-2 a{
+        font-size: 20pt;
+    }
+
+     #node-132 .internal-pre-footer-2 a{
+        font-size: 14pt;
+    }
+
+    .block-views-iconos-corporativo-block{
+        margin-top: 28em;
+    }
+
+    /*
+    .block-views-iconos-social-corporativo-block {
+        margin-top: 28em;
+    }
+    */
+
+    .webform-client-form-99 .webform-component--nombre,
+    .webform-client-form-99 .webform-component--correo,
+    .webform-client-form-99 .webform-component--telefono,
+    .webform-client-form-99 .webform-component--pais,
+    .webform-client-form-99 .webform-component--pais-ciudad,
+    .webform-client-form-99 .webform-component--tipo-de-evento,
+    .webform-client-form-99 .webform-component--invitados,
+    .webform-client-form-99 .webform-component--traslado,
+    .webform-client-form-99 .webform-component--hospedaje,
+    .webform-client-form-99 .webform-component--servicios-adicionales,
+    .webform-client-form-99 .webform-component--fecha-del-evento,
+    .webform-client-form-99 .webform-component--llegada,
+    .webform-client-form-99 .webform-component--salida
+    {
+        width: 90%;
+    }
+
+    .webform-client-form-106 .webform-component--nombre,
+    .webform-client-form-106 .webform-component--correo,
+    .webform-client-form-106 .webform-component--telefono,
+    .webform-client-form-106 .webform-component--pais,
+    .webform-client-form-106 .webform-component--pais-ciudad,
+    .webform-client-form-106 .webform-component--tipo-de-evento,
+    .webform-client-form-106 .webform-component--invitados,
+    .webform-client-form-106 .webform-component--traslado,
+    .webform-client-form-106 .webform-component--hospedaje,
+    .webform-client-form-106 .webform-component--servicios-adicionales,
+    .webform-client-form-106 .webform-component--fecha-del-evento,
+    .webform-client-form-106 .webform-component--llegada,
+    .webform-client-form-106 .webform-component--salida
+    {
+        width: 90%;
+    }
+
+    section.block-webform-client-block-99 {
+        padding: 30px 5% 30px 5%;
+    }
+
+    section.block-webform-client-block-106 {
+        padding: 30px 5% 30px 5%;
+    }
+
+    /* PRENSA */
+
+    .page-prensa #page-title {
+        top: 30px;
+        box-shadow: none;
+    }
+
+    /* CONTACTO */
+
+    .section-contacto #page-title {
+        top: 30px;
+        box-shadow: none;
+    }
+
+    /* TOURS */
+
+    .block-views-servicios-tours-block {
+        margin-top: 28em;
+    }
+
+    .webform-client-form-113 .webform-component--nombre,
+    .webform-client-form-113 .webform-component--telefono,
+    .webform-client-form-113 .webform-component--correo,
+    .webform-client-form-113 .webform-component--llegada,
+    .webform-client-form-113 .webform-component--salida,
+    .webform-client-form-113 .webform-component--adultos,
+    .webform-client-form-113 .webform-component--ninos
+    {
+        width: 90%;
+    }
+
+    section.block-webform-client-block-113 {
+        padding: 30px 5% 30px 5%;
+    }
+
+    .webform-client-form-113 button.webform-submit {
+        margin-left: calc(50% - 100px);
+    }
+
+    .block-views-servicios-tours-block .views-field-title {
+        font-size: 3em;
+        top: 1em;
+    }
+
+}
+
+
+@media only screen and (max-width : 640px) and (orientation:landscape) {
+
+    #logo img {
+        max-width: 40%;
+    }
+
+    .view-hoteleria-y-turismo, .view-alimentos-y-bebidas, .view-eventos-y-entretenimiento {
+        margin-top: 16em;
+    }
+
+    .view-hoteleria-y-turismo .panel-col-last, .view-alimentos-y-bebidas .panel-col-last, .view-eventos-y-entretenimiento .panel-col-last {
+        padding: 6em 2em 1em 2em;
+    }
+
+    .title-ig {
+        background-size: 40%;
+    }
+
+    .page-node-9.node-type-unidad-de-negocio .header-unidad-negocio {
+        max-width: 100%;
+        margin:0;
+    }
+
+    .not-front .webform-client-form-8 > div {
+        margin-top: 16em;
+    }
+
+    .node-type-unidad-de-negocio.section-hotel-boutique-isabel-la-católica .block-angularjs-hotel-video {
+        margin-top: 50em;
+    }
+
+    .block-views-servicios-tours-block {
+        margin-top: 18em;
+    }
+
+    .block-views-servicios-tours-block .views-field-title {
+        font-size: 5em;
+    }
+
+    .view-restaurant-menu-block {
+        margin-top: -10em;
+    }
+
+    .view-iconos-social-corporativo .views-responsive-grid-horizontal .views-row.views-row-first{
+        margin-top: 2em;
+    }
+
+    .block-views-iconos-corporativo-block{
+        margin-top: 20em;
+    }
+
+}

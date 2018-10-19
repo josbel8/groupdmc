@@ -1,0 +1,62 @@
+<?php
+/**
+ * Implements hook_help.
+ */
+function instagram_custom_help($path, $arg) {
+  $output = '';
+  switch ($path) {
+    case "admin/help#instagram_custom":
+      $output = '<p>'. t("This module modifies the instagram block settings to use a custom tag or user for specific pages. This allows the single tag or user block to display content other than the default user or tag identified in the block") .'</p>';
+      break;
+  }
+  return $output;
+}
+
+/**
+* Implement hook alter to change the default instagram_block settings based on aliased path.
+*/
+function instagram_custom_instagram_block_settings_alter(&$delta, &$settings, &$config) {
+    $path = $_GET['q'];
+    $path = drupal_get_path_alias($path);
+    switch ($path) {
+    /**
+    * Tag block: change tag, size, number of photos
+    */
+    case "dmc-tours-travel/destinos":
+        $config['user_id'] = '2042552070';
+        $config['access_token'] = '2042552070.50250cf.a5ce450a597845b6b9f67012fb06e3c0';
+        break;
+    case "dmc-tours-travel/traslados":
+        $config['user_id'] = '2042552070';
+        $config['access_token'] = '2042552070.50250cf.a5ce450a597845b6b9f67012fb06e3c0';
+        break;
+    case "dmc-tours-travel/hospedaje":
+        $config['user_id'] = '2042552070';
+        $config['access_token'] = '2042552070.50250cf.a5ce450a597845b6b9f67012fb06e3c0';
+        break;
+    case "dmc-tours-travel/entretenimiento":
+        $config['user_id'] = '2042552070';
+        $config['access_token'] = '2042552070.50250cf.a5ce450a597845b6b9f67012fb06e3c0';
+        break;
+    case "hotel-boutique-isabel-la-católica":
+        $config['user_id'] = '389813296';
+        $config['access_token'] = '389813296.577c4cb.75b962b0df84478698d60700ae5e0f30';
+        break;
+    case "juana-la-loca-restaurant":
+        $config['user_id'] = '1266756269';
+        $config['access_token'] = '1266756269.4fb6be4.4339f8cbe0ca4b43865c0e841a00d047';
+        break;
+    case "guillermina-restaurant":
+        $config['user_id'] = '1925299489';
+        $config['access_token'] = '1925299489.0973dc0.42bb496d4d624685943c06f670b9ca79';
+        break;
+    case "dmc-catering":
+        $config['user_id'] = '335819227';
+        $config['access_token'] = '335819227.befc4b5.0cc1dd0eb7484b609afa7f105a716d3f';
+        break;
+    case "dmc-planner":
+        $config['user_id'] = '514456831';
+        $config['access_token'] = '514456831.b0aaf8b.a856afac3e5943d196fc3f1186bd049b';
+        break;
+    }
+}

@@ -1,0 +1,12 @@
+name = Instagram Custom
+description = Change the Instagram block settings
+core = 7.x
+package = Custom Modules
+
+
+; Information added by Matt on 2015-07-17
+version = "7.x-1.x-dev"
+core = "7.x"
+dependencies[] = instagram_block
+project = "instagram_custom"
+datestamp = "1462193038"

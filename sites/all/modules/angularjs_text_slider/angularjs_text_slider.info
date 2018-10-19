@@ -1,0 +1,5 @@
+name = AngularJS Text Slider
+description = "An slider of text module creating a block that uses AngularJS"
+package = Other
+dependencies[] = system (>7.14)
+core = 7.x

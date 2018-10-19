@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function angularjs_hotel_video_theme($existing, $type, $theme, $path) {
+  return array(
+    'angularjs_hotel_video_block' => array(
+      'template' => 'angularjs-hotel-video-block',
+      'variables' => array()
+    ),
+  );
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function angularjs_hotel_video_block_info() {
+
+  $blocks['angularjs_hotel_video_block'] = array(
+    'info' => t('AngularJS Hotel Video'),
+  );
+
+  return $blocks;
+}
+
+
+/**
+ * Implements hook_block_view().
+ */
+function angularjs_hotel_video_block_view($delta = '') {
+
+  $block = array();
+
+  switch ($delta) {
+    case 'angularjs_hotel_video_block':
+      $block['subject'] = t('AngularJS Hotel Video');
+      $block['content'] = array(
+        '#theme' => 'angularjs_hotel_video_block',
+        '#attached' => array(
+          'js' => array(
+            drupal_get_path('module', 'angularjs_hotel_video') . '/js/angular-sanitize/angular-sanitize.min.js',
+            drupal_get_path('module', 'angularjs_hotel_video') . '/js/videogular/videogular.js',
+            drupal_get_path('module', 'angularjs_hotel_video') . '/js//videogular-controls/vg-controls.js',
+            drupal_get_path('module', 'angularjs_hotel_video') . '/js/videogular-overlay-play/vg-overlay-play.js',
+            drupal_get_path('module', 'angularjs_hotel_video') . '/js/videogular-poster/vg-poster.js',
+            drupal_get_path('module', 'angularjs_hotel_video') . '/js/videogular-buffering/vg-buffering.js',
+            drupal_get_path('module', 'angularjs_hotel_video') . '/js/script.js',
+          ),
+          'css' => array(
+            drupal_get_path('module', 'angularjs_hotel_video') . '/css/style.css',
+          ),
+        ),
+      );
+    break;
+  }
+
+  return $block;
+}
+
+?>
