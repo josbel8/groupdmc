@@ -43,14 +43,14 @@ function zurb_foundation_status_messages($variables) {
       $output .= $messages[0];
     }
 
-    if(!theme_get_setting('zurb_foundation_messages_modal'))
+    if(!theme_get_setting('zurb_foundation_messages_modal')) 
       $output .= '<a href="#" class="close">&times;</a>';
-
+    
     $output .= "</div>\n";
   }
 
   if ($output != '' && theme_get_setting('zurb_foundation_messages_modal')) {
-    $output = '<div id="status-messages" class="reveal-modal" role="alertdialog" data-reveal="">'. $output;
+    $output = '<div id="status-messages" class="reveal-modal" role="alertdialog">'. $output;
     $output .= '<a class="close-reveal-modal">&#215;</a>';
     $output .= "</div>";
   }

@@ -293,6 +293,8 @@ function mailing_list_delete_confirm($form, $form_state, $list) {
 function mailing_list_delete_confirm_submit($form, &$form_state) {
   if ($form_state['values']['confirm']) {
     mailing_list_delete($form_state['values']['mlid']);
+    // Remove corresponding block from all themes.
+    module_invoke('block', 'flush_caches');
     drupal_set_message(t('Deleted mailing list %name.', array('%name' => $form_state['values']['name'])));
     watchdog('mailing list', 'Mailing list: deleted list %name.', array('%name' => $form_state['values']['name']));
     $form_state['redirect'] = 'admin/structure/mailing-list';
