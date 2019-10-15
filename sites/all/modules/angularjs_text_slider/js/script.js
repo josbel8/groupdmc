@@ -5,7 +5,7 @@ var angularjsBlockTextFrontSlider = angular.module('angularjsTextFrontSliderApp'
 
     var dir = $window.location.href;
     dir = dir.split("/");
-    dir = '/dmc7/json/testimonios_home/' + dir[dir.length-1];
+    dir = rootFolder + 'json/testimonios_home/' + dir[dir.length-1];
 
     $http({
       method: 'GET',

@@ -9,8 +9,6 @@ var angularjsBlockVideo = angular.module('angularjsBlockVideoApp',
         ]
     );
 
-
-
     angularjsBlockVideo.controller('Video1',
         ["$sce",'$window', function ($sce,$window) {
 
@@ -21,14 +19,14 @@ var angularjsBlockVideo = angular.module('angularjsBlockVideoApp',
 
             this.config = {
                 sources: [
-                    {src: $sce.trustAsResourceUrl("/dmc7/sites/default/files/"+dir+".mp4"), type: "video/mp4"}
+                    {src: $sce.trustAsResourceUrl(rootFolder + "sites/default/files/"+dir+".mp4"), type: "video/mp4"}
                 ],
                 tracks: [
                     {}
                 ],
-                theme: "/dmc7/sites/all/modules/angularjs_block_video/js/videogular-themes-default/videogular.css",
+                theme: rootFolder + "sites/all/modules/angularjs_block_video/js/videogular-themes-default/videogular.css",
                 plugins: {
-                    poster: "/dmc7/sites/default/files/poster-"+dir+"-video.png"
+                    poster: rootFolder + "sites/default/files/poster-"+dir+"-video.png"
                 }
             };
         }]

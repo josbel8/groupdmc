@@ -1,4 +1,5 @@
 'use strict';
+
 var angularjsBlockVideo = angular.module('angularjsBlockVideoApp',
         [
             "ngSanitize",
@@ -13,14 +14,14 @@ var angularjsBlockVideo = angular.module('angularjsBlockVideoApp',
         ["$sce", function ($sce) {
             this.config = {
                 sources: [
-                    {src: $sce.trustAsResourceUrl("/dmc7/sites/default/files/hotel-boutique-isabel-la-catolica.mp4"), type: "video/mp4"}
+                    {src: $sce.trustAsResourceUrl(rootFolder + "sites/default/files/hotel-boutique-isabel-la-catolica.mp4"), type: "video/mp4"}
                 ],
                 tracks: [
                     {}
                 ],
-                theme: "/dmc7/sites/all/modules/angularjs_block_video/js/videogular-themes-default/videogular.css",
+                theme: rootFolder + "sites/all/modules/angularjs_block_video/js/videogular-themes-default/videogular.css",
                 plugins: {
-                    poster: "/dmc7/sites/default/files/poster-hotel-boutique-isabel-la-catolica-video.png"
+                    poster: rootFolder + "sites/default/files/poster-hotel-boutique-isabel-la-catolica-video.png"
                 }
             };
         }]
@@ -30,14 +31,14 @@ var angularjsBlockVideo = angular.module('angularjsBlockVideoApp',
         ["$sce", function ($sce) {
             this.config = {
                 sources: [
-                    {src: $sce.trustAsResourceUrl("/dmc7/sites/default/files/guillermina-restaurant.mp4"), type: "video/mp4"}
+                    {src: $sce.trustAsResourceUrl(rootFolder + "sites/default/files/guillermina-restaurant.mp4"), type: "video/mp4"}
                 ],
                 tracks: [
                     {}
                 ],
-                theme: "/dmc7/sites/all/modules/angularjs_block_video/js/videogular-themes-default/videogular.css",
+                theme: rootFolder + "sites/all/modules/angularjs_block_video/js/videogular-themes-default/videogular.css",
                 plugins: {
-                    poster: "/dmc7/sites/default/files/poster-guillermina-restaurant-video.png"
+                    poster: rootFolder + "sites/default/files/poster-guillermina-restaurant-video.png"
                 }
             };
         }]
@@ -47,14 +48,14 @@ var angularjsBlockVideo = angular.module('angularjsBlockVideoApp',
         ["$sce", function ($sce) {
             this.config = {
                 sources: [
-                    {src: $sce.trustAsResourceUrl("/dmc7/sites/default/files/juana-la-loca-restaurant.mp4"), type: "video/mp4"}
+                    {src: $sce.trustAsResourceUrl(rootFolder + "sites/default/files/juana-la-loca-restaurant.mp4"), type: "video/mp4"}
                 ],
                 tracks: [
                     {}
                 ],
-                theme: "/dmc7/sites/all/modules/angularjs_block_video/js/videogular-themes-default/videogular.css",
+                theme: rootFolder + "sites/all/modules/angularjs_block_video/js/videogular-themes-default/videogular.css",
                 plugins: {
-                    poster: "/dmc7/sites/default/files/poster-juana-la-loca-restaurant-video.png"
+                    poster: rootFolder + "sites/default/files/poster-juana-la-loca-restaurant-video.png"
                 }
             };
         }]
@@ -64,14 +65,14 @@ var angularjsBlockVideo = angular.module('angularjsBlockVideoApp',
         ["$sce", function ($sce) {
             this.config = {
                 sources: [
-                    {src: $sce.trustAsResourceUrl("/dmc7/sites/default/files/dmc-catering.mp4"), type: "video/mp4"}
+                    {src: $sce.trustAsResourceUrl(rootFolder + "sites/default/files/dmc-catering.mp4"), type: "video/mp4"}
                 ],
                 tracks: [
                     {}
                 ],
-                theme: "/dmc7/sites/all/modules/angularjs_block_video/js/videogular-themes-default/videogular.css",
+                theme: rootFolder + "sites/all/modules/angularjs_block_video/js/videogular-themes-default/videogular.css",
                 plugins: {
-                    poster: "/dmc7/sites/default/files/poster-dmc-catering-video.png"
+                    poster: rootFolder + "sites/default/files/poster-dmc-catering-video.png"
                 }
             };
         }]

@@ -24,6 +24,20 @@ function ProcesaForma(url_rq){
     return JSON.parse(datos);
 }
 
+switch (document.location.hostname)
+{
+    case 'localhost':
+        var localFolder =  document.location.pathname.split("/")[1];
+        var rootFolder = document.location.origin + "/" + localFolder + "/";
+        break;
+    case 'www.groupdmc.com.ve':
+        var rootFolder = '/';
+        break;
+    default:
+        var rootFolder = '/';
+        break;
+}
+
 jQuery(document).ready(function(){
 
     (function($) {
@@ -51,7 +65,7 @@ jQuery(document).ready(function(){
 
         if($(window).width()>640){
 
-            var main_menu_elements = ProcesaForma(" http://localhost/dmc7/json/menu_inicio ")
+            var main_menu_elements = ProcesaForma(rootFolder + "json/menu_inicio")
 
             $("#main-menu>li").each(function(){
 
@@ -344,7 +358,9 @@ jQuery(document).ready(function(){
         // ventana modal
 
         $('.close-reveal-modal').on('click',function(){
-            $('#status-messages').foundation('reveal', 'close');
+            $(".reveal-modal-bg").hide()
+            $("#status-messages").attr("class", "reveal-modal").unbind().fadeOut()
+            //~ $('#status-messages').foundation('reveal', 'close');
         });
 
 
